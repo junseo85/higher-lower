@@ -32,7 +32,7 @@ def check_count(a, b, score):
             print(f'Compare A: {a["name"]}, a {a["description"]}, from {a["country"]}.')
             print(vs)
             print(f'Against B: {b["name"]}, a {b["description"]}, from {b["country"]}.')
-            print(a["follower_count"], b["follower_count"])
+            
 
 
         elif b["follower_count"] > a["follower_count"] and answer == 'b':
@@ -47,7 +47,7 @@ def check_count(a, b, score):
             print(f'Compare A: {a["name"]}, a {a["description"]}, from {a["country"]}.')
             print(vs)
             print(f'Against B: {b["name"]}, a {b["description"]}, from {b["country"]}.')
-            print(a["follower_count"], b["follower_count"])
+            
 
 
         else:
