@@ -31,6 +31,8 @@ def check_count(a, b, score):
             a = b
             #generate new account and save to B
             b = data[random.randint(0, len(data) - 1)]
+            if b["name"] == a["name"]:
+                b = data[random.randint(0, len(data) - 1)]
             #clear the screen
             clear()
             print(logo)
@@ -45,6 +47,8 @@ def check_count(a, b, score):
             score += 1
             a = b
             b = data[random.randint(0, len(data) - 1)]
+            if b["name"] == a["name"]:
+                b = data[random.randint(0, len(data) - 1)]
             clear()
             print(logo)
             print(f"You're right! Current score: {score}.")
